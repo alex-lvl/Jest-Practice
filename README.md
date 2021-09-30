@@ -26,3 +26,5 @@ Each function mentioned above was built to be tested in certain ways. For exampl
 - Testing
 - Jest
 - Matchers
+- Linters: Prettier and ESLint
+- Transpiler: Babel
