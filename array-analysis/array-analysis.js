@@ -10,13 +10,11 @@ function average(arr) {
 
 function analyze(array) {
   let avg = average(array);
-  let min = Math.min(array);
-  let max = Math.max(array);
+  let min = Math.min(...array);
+  let max = Math.max(...array);
   let length = array.length;
 
   return { avg, min, max, length };
 }
 
-const randomArray = [20, 10, 40, 30];
-
-console.log(analyze(randomArray));
+export { analyze }
