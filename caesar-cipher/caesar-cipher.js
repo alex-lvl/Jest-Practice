@@ -11,10 +11,8 @@ function caesarCipher(string, key) {
       ciphertext += String.fromCharCode(encryptionCalculation + 97);
     }
   }
-  
   // console.log(`\"${plainText}\" ciphers to : ${ciphertext}`);
   // console.log(`\"${ciphertext}\" deciphers to: ${plainText2}`);
-
   return ciphertext;
 }
 
@@ -27,12 +25,10 @@ function decipher(cipherString, key) {
     } else {
       let code = cipherString.charCodeAt(i) - 97;
       let encryptionCalculation = (code - key) % 26;
-      plainText2 += String.fromCharCode(encryptionCalculation + 97)
+      plainText2 += String.fromCharCode(encryptionCalculation + 97);
     }
   }
-
   return plainText2;
 }
 
-export { caesarCipher, decipher }
-
+export { caesarCipher, decipher };
